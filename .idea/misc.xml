@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC/.gradle/caches/transforms-3/d7001b51e47f929d056cba1751fbc44f/transformed/appcompat-1.4.0/res/drawable/abc_ratingbar_indicator_material.xml" value="0.2723076923076923" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/background_search_bar.xml" value="0.2723076923076923" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_arrow_back.xml" value="0.2723076923076923" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_arrow_back_ios.xml" value="0.2723076923076923" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_arrow_forward_ios.xml" value="0.2723076923076923" />
@@ -18,7 +20,21 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_person.xml" value="0.2723076923076923" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_search.xml" value="0.2723076923076923" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/ic_search1.xml" value="0.2723076923076923" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout-v22/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_home_page.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/child_recycler_view.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/child_recycler_view_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/child_recycler_view_item_recommended.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/child_recycler_view_recommended.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/child_recycler_view_recommended_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/parent_recycler_view_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/parent_recycler_view_item_recommended.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/recycler_view_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/recycler_view_popular_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/recycler_view_recommended_item.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MovieApp/app/src/main/res/layout/recycler_view_top_rated_item.xml" value="0.33" />
+        <entry key="..\:/Users/PC/AppData/Local/Android/Sdk/platforms/android-31/data/res/drawable/ratingbar_full.xml" value="0.2723076923076923" />
       </map>
     </option>
   </component>

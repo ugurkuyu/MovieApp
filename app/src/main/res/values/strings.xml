@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">MovieApp</string>
+    <string name="app_description">Watch your favorite movies...</string>
+    <string name="hint_search">Search</string>
+    <string name="new_releases">New Releases</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="recommended">Recommended</string>
+    <string name="top_rated">Top Rated</string>
 </resources>

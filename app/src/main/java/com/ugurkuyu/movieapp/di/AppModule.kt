@@ -1,5 +1,7 @@
 package com.ugurkuyu.movieapp.di
 
+import android.app.Application
+import com.squareup.picasso.Picasso
 import com.ugurkuyu.movieapp.network.ApiService
 import com.ugurkuyu.movieapp.util.Constants
 import dagger.Module
@@ -16,10 +18,16 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideRetrofitClient(): Retrofit = Retrofit.Builder()
-        .baseUrl(Constants.BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
+    fun provideRetrofitClient(gsonConverterFactory: GsonConverterFactory): Retrofit =
+        Retrofit.Builder()
+            .baseUrl(Constants.BASE_URL)
+            .addConverterFactory(gsonConverterFactory)
+            .build()
+
+    @Singleton
+    @Provides
+    fun provideConverterFactory(): GsonConverterFactory =
+        GsonConverterFactory.create()
 
     @Singleton
     @Provides

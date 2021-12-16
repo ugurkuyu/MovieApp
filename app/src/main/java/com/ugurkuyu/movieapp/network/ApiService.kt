@@ -1,13 +1,19 @@
 package com.ugurkuyu.movieapp.network
 
-import com.ugurkuyu.movieapp.model.remote.LatestMovies
+import com.ugurkuyu.movieapp.model.remote.latest.LatestMoviesResult
+import com.ugurkuyu.movieapp.model.remote.popular.PopularMoviesResult
+import com.ugurkuyu.movieapp.model.remote.toprated.TopRatedMoviesResult
 import com.ugurkuyu.movieapp.util.Constants
-import com.ugurkuyu.movieapp.util.Resource
-import retrofit2.Response
 import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("movie/latest?api_key=" + Constants.API_KEY)
-    suspend fun getLatestMovies(): Response<Resource<List<LatestMovies>>>
+    @GET("movie/now_playing?api_key=" + Constants.API_KEY)
+    suspend fun getLatestMovies(): LatestMoviesResult
+
+    @GET("movie/popular?api_key=" + Constants.API_KEY)
+    suspend fun getPopularMovies(): PopularMoviesResult
+
+    @GET("movie/top_rated?api_key=" + Constants.API_KEY)
+    suspend fun getTopRatedMovies(): TopRatedMoviesResult
 }
