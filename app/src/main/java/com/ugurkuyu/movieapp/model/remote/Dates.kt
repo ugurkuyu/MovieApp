@@ -1,4 +1,4 @@
-package com.ugurkuyu.movieapp.model.remote.latest
+package com.ugurkuyu.movieapp.model.remote
 
 
 import com.google.gson.annotations.SerializedName

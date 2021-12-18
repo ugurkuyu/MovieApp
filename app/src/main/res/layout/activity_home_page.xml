@@ -69,6 +69,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txt_greet_user" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/txt_desc"
+                tools:listitem="@layout/recycler_view_upcoming_item" />
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_latest_header"
                 android:layout_width="match_parent"
@@ -81,7 +93,7 @@
                 android:textSize="@dimen/_20ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_desc" />
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_upcoming" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_latest"

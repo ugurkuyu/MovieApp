@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.ugurkuyu.movieapp.model.remote.latest.LatestMovies
 import com.ugurkuyu.movieapp.model.remote.popular.PopularMovies
 import com.ugurkuyu.movieapp.model.remote.toprated.TopRatedMovies
+import com.ugurkuyu.movieapp.model.remote.upcoming.UpcomingMovies
 import com.ugurkuyu.movieapp.network.ApiService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.collect
@@ -26,10 +27,14 @@ class HomePageViewModel @Inject constructor(private var apiService: ApiService) 
     private var _topRatedMoviesLiveData = MutableLiveData<List<TopRatedMovies>>()
     val topRatedMoviesLiveData get() = _topRatedMoviesLiveData as LiveData<List<TopRatedMovies>>
 
+    private var _upcomingMoviesLiveData = MutableLiveData<List<UpcomingMovies>>()
+    val upcomingMoviesLiveData get() = _upcomingMoviesLiveData as LiveData<List<UpcomingMovies>>
+
     init {
         getLatestMovies()
         getPopularMovies()
         getTopRatedMovies()
+        getUpcomingMovies()
     }
 
     private suspend fun fetchLatestMovies() = flow {
@@ -42,6 +47,10 @@ class HomePageViewModel @Inject constructor(private var apiService: ApiService) 
 
     private suspend fun fetchTopRatedMovies() = flow {
         emit(apiService.getTopRatedMovies())
+    }
+
+    private suspend fun fetchUpcomingMovies() = flow {
+        emit(apiService.getUpcomingMovies())
     }
 
     private fun getLatestMovies() {
@@ -71,5 +80,12 @@ class HomePageViewModel @Inject constructor(private var apiService: ApiService) 
         }
     }
 
-
+    private fun getUpcomingMovies() {
+        viewModelScope.launch {
+            fetchUpcomingMovies().collect {
+                _upcomingMoviesLiveData.postValue(it.results)
+                it.results.map { it1 -> UpcomingMoviesItemViewModel(it1) }
+            }
+        }
+    }
 }
